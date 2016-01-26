@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en-UK">
+
+<html>
+	<head>
+		<title>Home - Alpha Blog</title>
+	</head>
+	<body style = "background-color:#FFFFFF;">
+		<header style = "background-color:#888888; color:#FFFFFF; font-family:tahoma; text-align:center; padding:1px;">
+			<h1>Welcome to my Alpha Blog Webpage!</h1>
+		</header>
+		<hr>
+		<div style = "text-align:center;">
+			<%= image_tag 'blog.jpg', style: 'width:738px; height:229px;'%>
+		</div>
+		<hr>
+		<p style = "background-color:#888888; color:#FFFFFF; font-family:tahoma; font-size:14px; text-align:center; padding:5px;">
+			<b><%=link_to 'ABOUT', about_path, {:style => 'color:#FFFFFF;'} %></b>
+		</p>
+		<table>
+			<tr style = "color:#888888; font-family:tahoma; font-size: 12px; text-align:justify; ">
+				<td style = "padding:10px;">
+					Ruby on Rails is a web application framework written in Ruby under MIT license. Rails is a MVC (model-view-controller) framework, providing default structures for a database, a web service and web pages. It encourages and facilitates the use of web standards such as JSON or XML for data transfer, and HTML, CSS and JavaScript for display and user interfacing. In addition to MVC, Rails emphasises the use of other well-known software engineering patterns and paradigms, including convention over configuration (CoC), dont repeat yourself (DRY), and the active record pattern.
+				</td>
+				<td style = "padding:10px;">
+					David Heinemeier Hansson extracted Ruby on Rails from his work on the project management tool Basecamp at the web application company called Basecamp. Hansson first released Rails as open source in July 2004, but did not share commit rights to the project until February 2005. In August 2006, the framework reached a milestone when Apple announced that it would ship Ruby on Rails with MAC OS X v10.5 'Leopard', which was released in October 2007. There have since been 13 versions of Rails, the most recent being version 4.2.5 which was released in November 2015.
+				</td>
+			</tr>
+		</table> 
+		<hr>
+		<footer style = "color:#888888; font-family:tahoma; font-size:10px; text-align:center;">
+			<p>
+				FARREN BUCKLEY - 2016
+			</p>
+		</footer>
+	</body>
+</html>
