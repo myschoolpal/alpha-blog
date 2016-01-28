@@ -1,22 +1,24 @@
 <!DOCTYPE html>
 <html lang="en-UK">
-
 <html>
 	<head>
 		<title>Home - Alpha Blog</title>
 	</head>
-	<body style = "background-color:#FFFFFF;">
-		<header style = "background-color:#888888; color:#FFFFFF; font-family:tahoma; text-align:center; padding:1px;">
+	<body style = "background-color:#ffffff;">
+		<header style = "background-color:#888888; color:#ffffff; font-family:tahoma; text-align:center; padding:1px;">
 			<h1>Welcome to my Alpha Blog Webpage!</h1>
 		</header>
-		<hr>
+		<div class = "center jumbotron">
+			<h1>Alpha Blog</h1>
+			<%= link_to "Sign Up Now", "#", class: "btn btn-danger btn-lg btn-xlarge" %>
+		</div>
 		<div style = "text-align:center;">
 			<%= image_tag 'blog.jpg', style: 'width:738px; height:229px;'%>
 		</div>
 		<hr>
-		<p style = "background-color:#888888; color:#FFFFFF; font-family:tahoma; font-size:14px; text-align:center; padding:5px;">
-			<b><%=link_to 'ABOUT', about_path, {:style => 'color:#FFFFFF;'} %> | 
-				<%=link_to 'BLOG', articles_path, {:style => 'color:#FFFFFF;'} %></b>
+		<p style = "background-color:#888888; color:#ffffff; font-family:tahoma; font-size:14px; text-align:center; padding:5px;">
+			<b><%=link_to 'ABOUT', about_path, {:style => 'color:#ffffff;'} %> | 
+				<%=link_to 'BLOG', articles_path, {:style => 'color:#ffffff;'} %></b>
 		</p>
 		<table>
 			<tr style = "color:#888888; font-family:tahoma; font-size: 12px; text-align:justify; ">
